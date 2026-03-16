@@ -10,6 +10,7 @@ My personal development environment configuration. Optimized for full-stack Type
 | ---- | ----------- |
 | `.zshrc` | Shell aliases, functions, and environment setup |
 | `.gitconfig` | Git aliases, defaults, and editor config |
+| `.ssh_config` | SSH config template with port forwarding for Elasticsearch and Kibana |
 
 ---
 
@@ -69,6 +70,8 @@ ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 # Reload shell
 source ~/.zshrc
 ```
+
+For SSH config, copy `.ssh_config` to `~/.ssh/config` and update `HostName` with your actual server IP.
 
 ---
 
