@@ -1,0 +1,11 @@
+# SSH Config
+# Copy to ~/.ssh/config and update HostName with your actual server IP
+
+Host kolts-production
+    HostName YOUR_SERVER_IP
+    User root
+    IdentityFile ~/.ssh/id_ed25519
+    LocalForward 5601 localhost:5601  # Kibana
+    LocalForward 9200 localhost:9200  # Elasticsearch
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
